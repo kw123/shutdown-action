@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<PluginConfig>
+
+
+    <Field
+        id="debugLevel"
+        type="menu"
+        defaultValue="0" >
+        <List>
+            <Option value="0"    >no debug logging</Option>
+            <Option value="255"  >all </Option>
+        </List>
+        <Label>debug level: </Label>
+    </Field>
+        
+    <Field         
+        id="infoLabelShutDown"
+        type="label">
+        <Label>pick indigo action that will be executed when Indigo is shuting down</Label>
+    </Field>
+
+    <Field 
+        id="shutDownAction"
+        type="menu">
+        <List class="self" filter="" method="filterActions"  dynamicReload="false"/>
+        <Label>Indigo Action</Label>
+    </Field>
+
+
+</PluginConfig>
